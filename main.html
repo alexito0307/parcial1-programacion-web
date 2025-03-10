@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="images/coffee-bean.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style>
+    .outlined-text {
+      /* Color de relleno */
+      -webkit-text-fill-color: #EBA182; 
+      /* Grosor y color del contorno */
+      -webkit-text-stroke: 2px #000;    
+    }
+  </style>
+  <title>La taza</title>
+</head>
+
+<body>
+  <!-- Div de envios gratis -->
+  <div class="bg-[#8D93D9] flex p-1 items-center justify-center w-full space-x-2">
+    <img src="images/3-coffee-beans.png" alt="3-coffee-beans" class="w-5">
+    <h1>Envios gratis a partir de 600 MXN</h1>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/logo.png" alt="Logo" class="w-12 h-auto invert">
+        <h1 class="text-3xl font-medium text-white font-poppins">LA TAZA</h1>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="about.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nosotros</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contactanos</a>
+          </li>
+          <li>
+            <a href="index.html#favorites-section" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Productos Favoritos</a>
+          </li>
+          <li>
+            <a href="index.html#subscription" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Subscripciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  
+  <!-- Primera seccion -->
+  <section class="bg-[#F59372] flex xl:flex-wrap width-100 justify-left items-center lg:p-40 sm:p-0 overflow-hidden relative">
+    <video
+      class="hidden lg:block w-2xl h-[400px] rounded-tr-[400px] overflow-hidden"
+      autoplay
+      muted
+      loop
+    >
+    <source src="videos/cofffee-making.mp4" type="video/mp4"/>
+    </video>
+    <div class="flex flex-col space-y-10 items-center justify-center">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-poppins leading-tight text-center">
+        Un café confiable,<br>
+        <span class="lg:ml-8 md:ml-2 sm:ml-0">desde la semilla</span><br>
+        <span class="lg:ml-16 md:ml-2 sm:ml-0">hasta la taza</span><br>
+      </h1>
+      <button class="arrow-button">
+        <span class="text-stroke-2">Comprar Café</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 74 74"
+          height="34"
+          width="34"
+        >
+          <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+          <path
+            fill="black"
+            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <img src="images/coffee-splitter.png" alt="coffee-splitter" class="flex absolute bottom-0 -right-20 w-2xl lg:block hidden">
+  </section>
+</body>
+</html>

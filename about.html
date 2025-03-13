@@ -16,11 +16,10 @@
   <title>Sobre Nosotros - La Taza</title>
 </head>
 <body class="bg-[#F3F0EB]">
-
   <!-- Navbar -->
-  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <nav class="bg-[#000F8F] border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="images/logo.png" alt="Logo" class="w-12 h-auto invert">
         <h1 class="text-3xl font-medium text-white font-poppins">LA TAZA</h1>
       </a>
@@ -50,27 +49,31 @@
   </nav>
 
   <!-- Calidad - Sustentabilidad - Educación -->
-  <section class="grid grid-cols-3 border-b-2">
-    <div class="flex flex-col items-center justify-center p-10">
+  <section class="grid lg:grid-cols-3 grid-cols-1 border-b-2">
+    <div class="flex flex-col items-center justify-center p-5 lg:p-10">
       <img src="images/magnifying-glass.webp" alt="MagniFying Glass" class="w-1/4">
-      <h1 class="text-3xl font-bold">CALIDAD</h1>
+      <h1 class="text-2xl lg:text-3xl font-bold">CALIDAD</h1>
       <p class="text-center mt-5 font-light">Nosotros ponemos el estandár para los mejores cafés al impulsar la innovación en cada paso de la cadena de suministro.</p>
     </div>
     <div class="flex flex-col items-center justify-center p-10">
       <img src="images/coffee-plant-vertical.webp" alt="Coffee Plant Vertical" class="w-1/4">
-      <h1 class="text-3xl font-bold mt-1">SUSTENTABILIDAD</h1>
+      <h1 class="text-2xl lg:text-3xl font-bold mt-1">SUSTENTABILIDAD</h1>
       <p class="text-center mt-5 font-light">Nosotros tomamos accion para invertir en el medio ambiente y en la gente por medio de la colaboración, comunicación y transparencia.</p>
     </div>
     <div class="flex flex-col items-center justify-center p-10">
       <img src="images/books.webp" alt="Books" class="w-1/4">
-      <h1 class="text-3xl font-bold">EDUCACIÓN</h1>
+      <h1 class="text-2xl lg:text-3xl font-bold">EDUCACIÓN</h1>
       <p class="text-center mt-5 font-light">Nosotros cultivamos e intercambiamos el conocimiento para darle poder a la gente y crear experiencias en tu taza extraordinarias</p>
     </div>
   </section>
+
+  <!--Titulo Mensaje CEO-->
   <div class="flex flex-col items-center justify-center p-4 border-b-1">
-    <h1 class="text-3xl font-bold">De parte de nuestro CEO...</h1>
+    <h1 class="text-3xl font-bold text-center">De parte de nuestro CEO...</h1>
   </div>
-  <div class="flex flex-col items-center justify-center pt-10 px-35 pb-10">
+
+  <!--Mensaje CEO-->
+  <div class="flex flex-col items-center justify-center pt-10 lg:px-35 px-10 pb-10">
     <p class="font-light text-xl" >
       En 1995, mi socio y yo asistimos al Congreso del Café Sostenible, organizado por el Smithsonian. Durante tres intensos días, compartimos ideas con más de 250 miembros de la comunidad cafetalera sobre cómo construir cadenas de suministro respetuosas con el medio ambiente. Esa experiencia nos llevó a la convicción de que un futuro sostenible para el café implica abordar simultáneamente los desafíos ambientales, sociales y económicos. Fue mi primera introducción a la sostenibilidad de triple resultado, y marcó el inicio de mi filosofía empresarial. 
       <br> <br>
@@ -91,54 +94,52 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-[#000F8F] width-full p-8 pl-20 pr-20">
-    <h1 class="font-bold text-white text-center text-2xl w-full">LA TAZA</h1>
-    <div class="flex items-start w-full">
-      <div class="text-white items-center justify-start w-1/4 mr-30">
-        <h2 class="font-bold text-4xl">Interesado para más?</h2>
-        <p class="font-extralight mt-2 text-xs antialiased">Obten una vista anticipada de los nuevos elementos del menú, invitaciones a las próximas clases y promociones en tus productos favoritos.</p>
-        <form method="post">
-          <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="mt-4 p-3 w-full border-1 rounded-full placeholder-white placeholder:font-extralight placeholder:text-sm">
-          <button class="email-button mt-2">SUSCRIBIRSE</button>
-        </form>
-        <div class="flex items-center w-1/4 mt-15 space-x-5">
-          <img src="images/instagram-logo.webp" alt="Instagram Logo" class="w-11">
-          <img src="images/facebook-logo.webp" alt="Facebook" class="w-11">
-          <img src="images/twitter-logo.webp" alt="Twitter Logo" class="w-11">
-          <img src="images/youtube-logo.webp" alt="Youtube Logo" class="w-11">
+  <footer class="bg-[#000F8F] width-full p-8 lg:pl-20 lg:pr-20 text-white">
+    <h1 class="font-bold text-white text-center text-2xl w-full mb-5">LA TAZA</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1 w-full gap-10">
+      <div class="flex items-center w-full lg:col-span-2 md:col-span-2 text-center lg:text-left justify-center ">
+        <div class="text-white items-center justify-center w-full">
+          <h2 class="font-bold text-4xl">Interesado para más?</h2>
+          <p class="font-extralight mt-2 text-xs antialiased">Obten una vista anticipada de los nuevos elementos del menú, invitaciones a las próximas clases y promociones en tus productos favoritos.</p>
+          <form method="post">
+            <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="mt-4 p-3 w-full border-1 rounded-full placeholder-white placeholder:font-extralight placeholder:text-sm">
+            <button class="email-button mt-2">SUSCRIBIRSE</button>
+          </form>
+          <div class="flex items-center justify-center lg:justify-start w-full mt-15 space-x-5">
+            <img src="images/instagram-logo.webp" alt="Instagram Logo" class="w-11">
+            <img src="images/facebook-logo.webp" alt="Facebook" class="w-11">
+            <img src="images/twitter-logo.webp" alt="Twitter Logo" class="w-11">
+            <img src="images/youtube-logo.webp" alt="Youtube Logo" class="w-11">
+          </div>
         </div>
       </div>
-  
-      <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 text-white gap-20 mt-15">
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">TIENDA</span>
-          <a href="">Café</a>
-          <a href="">Subscripciones</a>
-          <a href="">Subscripciones Regaladas</a>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">NOSOTROS</span>
-          <a href="">Nosotros</a>
-          <a href="">Blog</a>
-          <a href="">Centros de Entrenamiento</a>
-          <a href="">Reportes de Transparencia</a>
-          <a href="">Carreras</a>
-          <a href="">Eventos</a>
-        </div>
-        <div class="flex flex-col" id="contact">
-          <span class="font-bold mb-2">CONTACTANOS</span>
-          <a href="">+52 9986537586</a>
-          <a href="">mail@lataza.com</a>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">MAYOREO</span>
-          <a href="">Login Empresas</a>
-          <a href="">Regalos Corporativos</a>
-          <a href="">Convertirse en Socio</a>
-        </div>
+      <div class="flex flex-col text-white mt-10 text-center lg:text-left">
+        <span class="font-bold mb-2">TIENDA</span>
+        <a href="">Café</a>
+        <a href="">Subscripciones</a>
+        <a href="">Subscripciones Regaladas</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left ">
+        <span class="font-bold mb-2">NOSOTROS</span>
+        <a href="">Nosotros</a>
+        <a href="">Blog</a>
+        <a href="">Centros de Entrenamiento</a>
+        <a href="">Reportes de Transparencia</a>
+        <a href="">Carreras</a>
+        <a href="">Eventos</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left " id="contact">
+        <span class="font-bold mb-2">CONTACTANOS</span>
+        <a href="">+52 9986537586</a>
+        <a href="">mail@lataza.com</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left ">
+        <span class="font-bold mb-2">MAYOREO</span>
+        <a href="">Login Empresas</a>
+        <a href="">Regalos Corporativos</a>
+        <a href="">Convertirse en Socio</a>
       </div>
     </div>
-
     <div class="flex flex-col items-center justify-center mt-10 text-white">
       <ul class="flex font-extralight">
         <li class="border-r border-white px-4">Politicas de Privacidad</li>
@@ -147,5 +148,20 @@
       </ul>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 1. Seleccionar el botón que va a togglear
+      const toggleButton = document.querySelector('[data-collapse-toggle]');
+  
+      // 2. Seleccionar el menú que se va a mostrar/ocultar
+      const navbarMenu = document.getElementById('navbar-default');
+  
+      // 3. Escuchar el clic y alternar la clase 'hidden'
+      toggleButton.addEventListener('click', function() {
+        navbarMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+  
 </body>
 </html>

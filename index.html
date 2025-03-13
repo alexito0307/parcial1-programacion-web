@@ -23,13 +23,13 @@
   <title>La taza</title>
 </head>
 
-<body class="flex flex-col">
+<body>
   <!-- Div de envios gratis -->
   <div class="bg-[#8D93D9] flex p-1 items-center justify-center w-full space-x-2">
     <img src="images/3-coffee-beans.png" alt="3-coffee-beans" class="w-5">
     <h1>Envios gratis a partir de 600 MXN</h1>
   </div>
-
+  
   <!-- Navbar -->
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -61,22 +61,22 @@
       </div>
     </div>
   </nav> 
-
+  
   <!-- Primera seccion -->
-  <section class="bg-[#F59372] flex xl:flex-wrap width-100 justify-left items-center p-40 overflow-hidden relative">
+  <section class="bg-[#F59372] flex xl:flex-wrap w-full justify-left items-center lg:p-40 sm:p-0 overflow-hidden relative">
     <video
-      class="hidden lg:block w-2xl h-[400px] rounded-tr-[400px] overflow-hidden"
+      class="hidden lg:block w-1/3 h-[400px] rounded-tr-[400px] overflow-hidden"
       autoplay
       muted
       loop
     >
     <source src="videos/cofffee-making.mp4" type="video/mp4"/>
     </video>
-    <div class="flex flex-col space-y-10 items-center justify-center">
-      <h1 class="text-7xl font-bold font-poppins leading-tight text-center">
+    <div class="flex flex-col max-w-screen-xl mx-auto space-y-10 items-center justify-center lg:w-1/2 sm:w-full p-10">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-poppins leading-tight text-center">
         Un café confiable,<br>
-        <span class="ml-8">desde la semilla</span><br>
-        <span class="ml-16">hasta la taza</span><br>
+        <span>desde la semilla</span><br>
+        <span>hasta la taza</span><br>
       </h1>
       <button class="arrow-button">
         <span class="text-stroke-2">Comprar Café</span>
@@ -95,24 +95,24 @@
         </svg>
       </button>
     </div>
-    <img src="images/coffee-splitter.png" alt="coffee-splitter" class="flex absolute bottom-0 -right-20 w-2xl lg:block hidden">
+    <img src="images/coffee-splitter.png" alt="coffee-splitter" class="flex absolute bottom-0 -right-20 w-xl lg:block hidden">
   </section>
 
   <!-- Seccion de avisos -->
-  <section class="bg-[#F3F1EB] flex items-center justify-center width-100">
-    <div class="width-25 justify-left items-center flex flex-row gap-4 p-10">
+  <section class="bg-[#F3F1EB] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center w-full">
+    <div class="width-50 justify-center items-center flex flex-row gap-4 p-10">
       <img src="images/coffee-plant.avif" alt="Coffee Plant" class="w-1/4">
       <p class="text-1xl">Fuentes sustentables</p>
     </div>
-    <div class="width-25 justify-left items-center flex flex-row gap-4">
+    <div class="width-50 justify-center items-center flex flex-row gap-4 p-10">
       <img src="images/coffee-spoon.avif" alt="Coffee Spoon" class="w-1/4">
       <p>Calidad de producto</p>
     </div>
-    <div class="width-25 justify-left items-center flex flex-row gap-4">
+    <div class="width-50 justify-center items-center flex flex-row gap-4 p-10">
       <img src="images/b-corp-logo.avif" alt="B Corp Logo" class="w-1/4">
       <p>Empresa certificada</p>
     </div>
-    <div class="width-25 justify-left items-center flex flex-row gap-4">
+    <div class="width-50 justify-center items-center flex flex-row gap-4 p-10">
       <img src="images/coffee-bag.avif" alt="Coffee Bag" class="w-1/4">
       <p>Empaque biodegradable</p>
     </div>
@@ -120,10 +120,9 @@
 
   <!-- Seccion de favoritos -->
   <div class="flex items-center justify-center p-15 border-t-1 border-b-1 border-black" id="favorites-section">
-    <h1 class="text-5xl font-bold">Los favoritos para tu taza</h1>
+    <h1 class="text-5xl font-bold text-center">Los favoritos para tu taza</h1>
   </div>
-
-  <section class="grid lg:grid-cols-4 grid-cols-2  items-center items-stretch justify-center width-100">
+  <section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  items-center items-stretch justify-center width-100">
     <!-- Nescafé Taster's Choice Gourmet Roast -->
     <div class="flex flex-col items-center justify-center border-1 w-full text-center">
       <div class="bg-[#A9AE36] flex items-center justify-center w-full">
@@ -191,8 +190,11 @@
     </div>
   </section>
 
+
+
+
   <!-- Seccion de la subscripcion -->
-  <section class="bg-[#FBC8B3] grid grid-cols-2 w-full divide-x-1 divide-black" id="subscription">
+  <section class="bg-[#FBC8B3] grid lg:grid-cols-2 grid-cols-1 w-full divide-x-1 divide-black" id="subscription">
     
     <!-- Primera Division -->
     <div class="flex flex-col items-center justify-bottom pt-10 pr-10 pl-10 ">
@@ -293,55 +295,54 @@
       </button>
     </div>
   </section>
+
   <!-- Footer -->
-  <footer class="bg-[#000F8F] width-full p-8 pl-20 pr-20">
-    <h1 class="font-bold text-white text-center text-2xl w-full">LA TAZA</h1>
-    <div class="flex items-start w-full">
-      <div class="text-white items-center justify-start w-1/4 mr-30">
-        <h2 class="font-bold text-4xl">Interesado para más?</h2>
-        <p class="font-extralight mt-2 text-xs antialiased">Obten una vista anticipada de los nuevos elementos del menú, invitaciones a las próximas clases y promociones en tus productos favoritos.</p>
-        <form method="post">
-          <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="mt-4 p-3 w-full border-1 rounded-full placeholder-white placeholder:font-extralight placeholder:text-sm">
-          <button class="email-button mt-2">SUSCRIBIRSE</button>
-        </form>
-        <div class="flex items-center w-1/4 mt-15 space-x-5">
-          <img src="images/instagram-logo.webp" alt="Instagram Logo" class="w-11">
-          <img src="images/facebook-logo.webp" alt="Facebook" class="w-11">
-          <img src="images/twitter-logo.webp" alt="Twitter Logo" class="w-11">
-          <img src="images/youtube-logo.webp" alt="Youtube Logo" class="w-11">
+  <footer class="bg-[#000F8F] width-full p-8 lg:pl-20 lg:pr-20 text-white">
+    <h1 class="font-bold text-white text-center text-2xl w-full mb-5">LA TAZA</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1 w-full gap-10">
+      <div class="flex items-center w-full lg:col-span-2 md:col-span-2 text-center lg:text-left justify-center ">
+        <div class="text-white items-center justify-center w-full">
+          <h2 class="font-bold text-4xl">Interesado para más?</h2>
+          <p class="font-extralight mt-2 text-xs antialiased">Obten una vista anticipada de los nuevos elementos del menú, invitaciones a las próximas clases y promociones en tus productos favoritos.</p>
+          <form method="post">
+            <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="mt-4 p-3 w-full border-1 rounded-full placeholder-white placeholder:font-extralight placeholder:text-sm">
+            <button class="email-button mt-2">SUSCRIBIRSE</button>
+          </form>
+          <div class="flex items-center justify-center lg:justify-start w-full mt-15 space-x-5">
+            <img src="images/instagram-logo.webp" alt="Instagram Logo" class="w-11">
+            <img src="images/facebook-logo.webp" alt="Facebook" class="w-11">
+            <img src="images/twitter-logo.webp" alt="Twitter Logo" class="w-11">
+            <img src="images/youtube-logo.webp" alt="Youtube Logo" class="w-11">
+          </div>
         </div>
       </div>
-  
-      <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 text-white gap-20 mt-15">
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">TIENDA</span>
-          <a href="">Café</a>
-          <a href="">Subscripciones</a>
-          <a href="">Subscripciones Regaladas</a>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">NOSOTROS</span>
-          <a href="">Nosotros</a>
-          <a href="">Blog</a>
-          <a href="">Centros de Entrenamiento</a>
-          <a href="">Reportes de Transparencia</a>
-          <a href="">Carreras</a>
-          <a href="">Eventos</a>
-        </div>
-        <div class="flex flex-col" id="contact">
-          <span class="font-bold mb-2">CONTACTANOS</span>
-          <a href="">+52 9986537586</a>
-          <a href="">mail@lataza.com</a>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2">MAYOREO</span>
-          <a href="">Login Empresas</a>
-          <a href="">Regalos Corporativos</a>
-          <a href="">Convertirse en Socio</a>
-        </div>
+      <div class="flex flex-col text-white mt-10 text-center lg:text-left">
+        <span class="font-bold mb-2">TIENDA</span>
+        <a href="">Café</a>
+        <a href="">Subscripciones</a>
+        <a href="">Subscripciones Regaladas</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left ">
+        <span class="font-bold mb-2">NOSOTROS</span>
+        <a href="">Nosotros</a>
+        <a href="">Blog</a>
+        <a href="">Centros de Entrenamiento</a>
+        <a href="">Reportes de Transparencia</a>
+        <a href="">Carreras</a>
+        <a href="">Eventos</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left " id="contact">
+        <span class="font-bold mb-2">CONTACTANOS</span>
+        <a href="">+52 9986537586</a>
+        <a href="">mail@lataza.com</a>
+      </div>
+      <div class="flex flex-col mt-10 text-center lg:text-left ">
+        <span class="font-bold mb-2">MAYOREO</span>
+        <a href="">Login Empresas</a>
+        <a href="">Regalos Corporativos</a>
+        <a href="">Convertirse en Socio</a>
       </div>
     </div>
-
     <div class="flex flex-col items-center justify-center mt-10 text-white">
       <ul class="flex font-extralight">
         <li class="border-r border-white px-4">Politicas de Privacidad</li>
@@ -350,6 +351,5 @@
       </ul>
     </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
